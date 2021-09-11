@@ -15,7 +15,6 @@ before_script:
 
 script:
   - docker --version # print the version for logging
-  - docker image prune --all # to remove dangling and unsed images
   - docker-compose -f docker-compose-build.yaml build --parallel
   - docker tag reverseproxy singhabhyuday01/reverseproxy:v1
   - docker tag udagram-api-user singhabhyuday01/udagram-api-user:v1
