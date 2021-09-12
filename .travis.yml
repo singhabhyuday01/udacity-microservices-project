@@ -19,7 +19,7 @@ script:
   - docker tag reverseproxy singhabhyuday01/reverseproxy:v1
   - docker tag udagram-api-user singhabhyuday01/udagram-api-user:v1
   - docker tag udagram-api-feed singhabhyuday01/udagram-api-feed:v1
-  - docker tag udagram-frontend singhabhyuday01/udagram-frontend:v2
+  - docker tag udagram-frontend singhabhyuday01/udagram-frontend:v3
 
 # Tasks to perform after the process is successful. Formatting the Docker username and password as below enables you to programmatically log in without having the password exposed in logs.
 after_success:
@@ -27,5 +27,5 @@ after_success:
   - docker push singhabhyuday01/reverseproxy:v1
   - docker push singhabhyuday01/udagram-api-user:v1
   - docker push singhabhyuday01/udagram-api-feed:v1
-  - docker push singhabhyuday01/udagram-frontend:v2
+  - docker push singhabhyuday01/udagram-frontend:v3
   - echo "Pushed on docker hub successfully!"

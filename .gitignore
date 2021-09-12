@@ -106,3 +106,5 @@ dist
 set_env.sh
 
 */node_modules
+aws_secret.yaml
+env-secret.yaml
