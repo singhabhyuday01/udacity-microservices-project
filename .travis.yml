@@ -27,5 +27,5 @@ after_success:
   - docker push singhabhyuday01/reverseproxy:v1
   - docker push singhabhyuday01/udagram-api-user:v1
   - docker push singhabhyuday01/udagram-api-feed:v1
-  - docker push singhabhyuday01/udagram-frontend:v1
+  - docker push singhabhyuday01/udagram-frontend:v2
   - echo "Pushed on docker hub successfully!"
