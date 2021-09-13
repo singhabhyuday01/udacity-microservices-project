@@ -18,13 +18,13 @@ spec:
       - image: singhabhyuday01/udagram-api-feed:v1
         name: backend-feed
         imagePullPolicy: Always
-        # resources:
-        #   requests:
-        #     memory: "64Mi"
-        #     cpu: "250m"
-        #   limits:
-        #     memory: "1024Mi"
-            # cpu: "500m"
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "250m"
+          limits:
+            memory: "1024Mi"
+            cpu: "500m"
         env:
         - name: URL
           valueFrom:
@@ -80,3 +80,4 @@ spec:
       - name: aws-secret
         secret:
           secretName: aws-secret
+          
